@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 3fr .5fr;
+    grid-template-areas:"header"
+                        "main"
+                        "footer";
+    background-color: #eff4fd; ;
+}
+header{
+    grid-area: header;
+    background-color: #fff;
+}
+main{
+    grid-area: main;
+    background-color: #fff;
+}
+
+footer{
+    grid-area: footer;
+}
+/* here the body style starts */
+
+.project-content{
+    background-color: white;
+    display: block;
+}
+
+.top-content{
+    display: flex;
+}
+
+.project-img-content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;    
+}
+
+.pro-img{
+    margin-top: 6%;
+    margin-left: 8%;
+    height: max-content;
+    height: 330px;
+}
+
+.pro-img img{
+    padding-left: 8px;
+    padding-top: 22px;
+    /* max-width: 100%; */
+}
+
+.detail{
+    padding-top: 75px;
+    padding-left: 32px;
+}
+
+.detail h1{
+    font-size: 30px;
+}
+
+.detail ul li{
+    font-size: 20px;
+    line-height: 22px;
+    padding: 5px 0px;
+}
+
+
+.testimonials{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.testimonials p{
+    color: black; 
+    line-height: 22px; 
+    text-align: center;
+    margin-left: 10%
+}
+
+.testimonials img{
+    padding-top: 3%;
+    margin-left: 40%;
+  
+}
+
+blockquote{
+    text-align: center;
+    font-size: 20px;
+    width: 80%;
+    margin-left: 10%;
+    
+}
+
+
+@media screen and (max-width: 975px){
+
+    .top-content{
+        flex-direction: column;
+        text-align: center;   
+        width: 100%;
+    }
+    .project-content{
+        flex-direction: column;
+        margin-left: 20%;
+        margin-right: 20%;
+    }  
+}
+
+@media screen and (max-width: 710px){
+    .detail{
+        margin-top: -5rem;
+    }
+}
+
+

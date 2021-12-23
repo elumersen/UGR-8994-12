@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr) auto);
+    grid-template-areas:"header"
+                        "main"
+                        "footer";
+    background-color: #eff4fd; ;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/* here starts the main content */
+
+.resume-content{
+    background-color: white;
+}
+
+.top-content video{
+    max-width: 100%;
+    width: 400px;
+    
+    height: 100%;
+}
+
+.resume-content h1{
+    margin: 1rem;
+   width: 50%;
+   margin: 3% auto;
+   margin-bottom: 3rem;
+   color: white;
+}
+
+.certificates .pics{
+    width: 300px;
+}
+
+.last-pic{
+    height: 227px;
+}
+
+.top-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 8% ;
+  
+}
+
+.right-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.btn{
+    padding: 10px 30px;
+    background-color: #047aed;
+    border: 1px solid none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.right-content .first{
+    margin-top: 10%;
+}
+
+.btn:hover, .btn:focus{
+    cursor: pointer;
+    box-shadow: 0 0 10px balck;
+}
+
+.right-content .btn{
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.top-content article p{
+    text-align: center;
+    font-family: cursive;
+    width: 100%;
+    color: black;
+}
+
+.certificates{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    padding-bottom: 5%;
+}
+
+/* here starts the footer  */
+/* starts the responsiveness */
+
+@media only screen and(max-width: 860px){
+    .top-content{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        gap: 20px
+    }
+
+    .right-content{
+        padding-top: 30px;
+    }   
+    
+.top-content article p{
+    text-align: center;
+    }
+
+    .resume-content h1{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .top-content{
+        display: block;
+        margin: auto;
+    }
+    .top-content video{
+        max-width: 100%;
+        width: 400px;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:560px){
+    .top-content{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        gap: 20px
+    }
+
+    .right-content{
+        margin-bottom: 30px;
+        padding-left: 5%;
+    }
+    
+    .certificates{
+        margin-right:15px;
+        margin-left: 15px;
+    }
+}
+
+

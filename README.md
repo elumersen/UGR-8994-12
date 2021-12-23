@@ -1,2 +1,3 @@
-# UGR-8994-12
-Personal portfolio
+# Personal Portfolio and Profile page
+Name: Melat Ermiyas Tsegaye
+ID: UGR-8994-12

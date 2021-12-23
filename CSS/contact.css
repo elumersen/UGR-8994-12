@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 3.8fr 0,9fr;
+    grid-template-areas:"header"
+                        "main"
+                        "footer";
+    background-color: #eff4fd;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+#user-message{
+    margin-left: -3.5rem;
+}
+.user-message{
+}
+.text-area-div{
+    margin-top: 2rem;
+}
+/* here starts the content of the page */
+
+.contact-container{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: space-around; 
+    padding: 2% 0;
+}
+.logo img{
+    width: 100px;
+    margin: auto 0;
+    padding: 10px;
+}
+.address{
+    width: 50%;
+    margin-right: 20px;
+}
+.info{
+    padding-left: 1em;
+}
+
+.info h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.form-control{
+    margin-bottom: 8px;
+    margin-right: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-control input:focus{
+    outline: none;
+}
+
+.form-control textarea:focus{
+    outline: none;
+}
+
+.right-content .btn{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 30px;
+    background-color: #047aed;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.btn:hover, .btn:focus{
+    cursor: pointer;
+    box-shadow: 0 0 10px balck;
+}
+
+.form-control input[type='email'], .form-control input[type='text']{
+    border: 0;
+    width: 100%;
+    padding: 6px 15px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.submit-btn{
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(33, 33, 220);
+    color: white;
+    width: 30%;
+}
+
+textarea{
+    font-size: 16px;
+}
+
+
+/* the responsiveness */
+@media screen and (max-width: 1065px) {
+    .contact-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .address{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .logo{
+        width: 10%;
+    }
+    .addres-img{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .address img{
+        max-width: 100%;
+    }
+}
+
+

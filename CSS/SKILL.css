@@ -1,0 +1,73 @@
+*{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+}
+
+.skill-table{
+    width: 100%;
+    justify-self: center;
+}
+.skill-content{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(34, 32, 32);
+    color: rgb(250, 250, 250);
+    padding: 50px 10px;
+    justify-content: space-around;
+}
+
+.left, .right h1{
+    color: rgb(233, 226, 226);
+}
+
+.skill-img{
+    width: 80%;
+    min-width: 200px;
+    margin: 2% 10;
+    object-fit: cover;
+}
+
+.skill-table td, .skill-table th{
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.skill-table th{
+    background-color: darkblue;
+    color: #fff;
+}
+
+.skill-table tbody tr:nth-child(even){
+    background-color: #f0eeee;
+    color: black;
+}
+.left , .right{
+    width: 40%;
+}
+
+
+@media screen and (max-width: 560px) {
+    .skill-table td{
+        display: block;
+        max-width: auto;
+    }
+    .skill-table th{
+        max-width: auto;
+    }
+}
+@media screen and (max-width: 450px) {
+    .skill-content{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+    .skill-img{
+        width: 100px;
+    }
+}
+
